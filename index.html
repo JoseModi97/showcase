@@ -111579,9 +111579,6 @@
         loop: false, // Changed from true
         autoplay: false, // Changed from true
         animationData: animationData,
-        rendererSettings: {
-            preserveAspectRatio: 'xMidYMid slice'
-        }
     };
 
     var anim;
@@ -111593,7 +111590,7 @@
         anim.addEventListener('DOMLoaded', function () {
             let currentFrame = 0;
             let targetFrame = 0;
-        const scrollSensitivityFactor = 0.02; // Adjust for sensitivity: smaller means less sensitive
+        const scrollSensitivityFactor = 0.50; // Adjust for sensitivity: smaller means less sensitive
         const animationSmoothness = 0.1; // Adjust for smoothness: 0.1 is quite smooth, closer to 1 is faster/jumpier
 
         let isAnimating = false;
